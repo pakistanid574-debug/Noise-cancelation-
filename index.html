@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice & Noise Canceler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎙️ Background Noise Canceler</h1>
+        <p class="subtitle">Remove background noise from your voice recordings instantly.</p>
+
+        <div class="card">
+            <h3>Upload Audio File</h3>
+            <input type="file" id="audioFile" accept="audio/*">
+        </div>
+
+        <div class="card controls">
+            <h3>Controls</h3>
+            <button id="playOriginal" disabled>Play Original</button>
+            <button id="playClean" disabled>Play Cleaned Audio</button>
+            <button id="downloadBtn" disabled>Download Clean Audio</button>
+        </div>
+
+        <div class="status" id="statusText">Status: Waiting for audio...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
